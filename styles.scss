@@ -213,17 +213,19 @@ body {
 
 
 @media (min-width: 1400px) {
-    $container-height: 400px;
-    
     @for $i from 1 through 6 {
         .e-#{$i} {margin: 20px 20px;}
     }
 
     .product-view-container {
-        display: grid;
         grid-template-columns: 20vw 20vw;
         width: 40vw;
-        height: $container-height;
-        margin: auto;
+    }
+}
+
+@media (min-width: 1800px) {
+    .product-view-container {
+        grid-template-columns: 15vw 15vw;
+        width: 30vw;
     }
 }
